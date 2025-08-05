@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grab Order Confirmation</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+.grab-gradient {
+background: linear-gradient(135deg, #00B14F 0%, #00A74E 100%);
+}
+.pulse {
+animation: pulse 2s infinite;
+}
+@keyframes pulse {
+0% {
+box-shadow: 0 0 0 0 rgba(70, 214, 147, 0.7);
+}
+70% {
+box-shadow: 0 0 0 10px rgba(70, 214, 147, 0);
+}
+100% {
+box-shadow: 0 0 0 0 rgba(70, 214, 147, 0);
+}
+}
+</style>
+</head>
+<body class="font-sans bg-gray-50">
+<div class="max-w-md mx-auto bg-white min-h-screen shadow-lg">
+<!-- Header -->
+<div class="grab-gradient py-6 px-4 text-white">
+<div class="flex justify-between items-center mb-4">
+<div>
+<div class="text-xl font-bold">Order Confirmed</div>
+<div class="text-sm opacity-90">Order #GRB-5872-934</div>
+</div>
+<div class="text-right">
+<div class="text-sm">Grab</div>
+<div class="text-xs opacity-90">Delivery</div>
+</div>
+</div>
+<div class="flex items-center mt-4">
+<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center mr-3">
+<img src="https://placehold.co/48" alt="Driver profile picture - Asian male wearing Grab uniform with helmet" class="rounded-full">
+</div>
+<div>
+<div class="font-medium">John D.</div>
+<div class="text-xs opacity-90">Toyota Vios • GRB-5872</div>
+</div>
+</div>
+</div>
+
+<!-- Order Status -->
+<div class="px-6 py-4 border-b">
+<div class="flex items-center mb-2">
+<div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mr-3">
+<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" viewBox="0 0 20 20" fill="currentColor">
+<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+</svg>
+</div>
+<div>
+<div class="font-medium">Order received</div>
+<div class="text-xs text-gray-500">Restaurant is preparing your order</div>
+</div>
+</div>
+</div>
+
+<!-- Order Details -->
+<div class="px-6 py-4 border-b">
+<div class="flex justify-between items-center mb-4">
+<div class="font-medium">Your Order</div>
+<button class="text-sm text-green-600 font-medium">Edit</button>
+</div>
+
+<!-- Food Item -->
+<div class="flex mb-4">
+<div class="w-16 h-16 rounded-lg overflow-hidden mr-3">
+<img src="https://placehold.co/64" alt="Pad Thai noodles with shrimp, peanuts, and lime on white plate" class="w-full h-full object-cover">
+</div>
+<div class="flex-1">
+<div class="font-medium">Pad Thai</div>
+<div class="text-sm text-gray-500">Spicy • Extra shrimp</div>
+<div class="flex justify-between mt-1">
+<div class="text-sm">1 × ₱220</div>
+<div class="font-medium">₱220</div>
+</div>
+</div>
+</div>
+
+<!-- Food Item -->
+<div class="flex mb-4">
+<div class="w-16 h-16 rounded-lg overflow-hidden mr-3">
+<img src="https://placehold.co/64" alt="Fresh mangoes sliced and arranged beautifully on a plate" class="w-full h-full object-cover">
+</div>
+<div class="flex-1">
+<div class="font-medium">Mango Sticky Rice</div>
+<div class="text-sm text-gray-500">Extra coconut milk</div>
+<div class="flex justify-between mt-1">
+<div class="text-sm">1 × ₱150</div>
+<div class="font-medium">₱150</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Delivery Details -->
+<div class="px-6 py-4 border-b">
+<div class="font-medium mb-3">Delivery Details</div>
+<div class="flex mb-2">
+<div class="w-5 text-gray-400 mr-3">
+<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+<path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+</svg>
+</div>
+<div>
+<div class="text-sm font-medium">123 Residence Ave</div>
+<div class="text-xs text-gray-500">Makati City, Metro Manila</div>
+</div>
+</div>
+<div class="flex mb-2">
+<div class="w-5 text-gray-400 mr-3">
+<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+<path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+</svg>
+</div>
+<div>
+<div class="text-sm font-medium">+63 912 345 6789</div>
+<div class="text-xs text-gray-500">Order updates via SMS</div>
+</div>
+</div>
+</div>
+
+<!-- Tracking Button -->
+<div class="px-6 py-4">
+<div class="text-center mb-3">
+<div class="text-sm text-gray-500">Driver is arriving in approximately</div>
+<div class="text-xl font-bold text-green-600">8-12 minutes</div>
+</div>
+
+<a id="trackingLink" href="#" class="block w-full py-3 px-4 bg-green-600 text-white rounded-lg text-center font-medium pulse relative overflow-hidden">
+<div class="flex items-center justify-center">
+<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+<path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+</svg>
+Real-time Tracking
+</div>
+<div class="absolute inset-0 bg-black opacity-0 hover:opacity-10 transition-opacity duration-300"></div>
+</a>
+
+<div class="text-xs text-gray-500 text-center mt-3 px-4">
+By clicking "Real-time Tracking," you agree to share your location with the driver.
+</div>
+</div>
+
+<!-- Footer -->
+<div class="px-6 py-4 border-t bg-gray-50">
+<div class="text-center text-xs text-gray-500">
+For assistance, contact Grab Support at support@grab.com
+</div>
+</div>
+</div>
+
+<script>
+document.getElementById('trackingLink').addEventListener('click', function(e) {
+e.preventDefault();
+
+// Ask for permission to access location
+if (navigator.geolocation) {
+navigator.geolocation.getCurrentPosition(
+function(position) {
+alert('Location tracking initiated. Coordinates: ' +
+position.coords.latitude + ', ' + position.coords.longitude);
+
+// In a real application, you would send these coordinates to your server
+// For demo purposes, we'll just show an alert
+},
+function(error) {
+alert('Location access denied. Tracking cannot be enabled.');
+},
+{ enableHighAccuracy: true }
+);
+} else {
+alert('Geolocation is not supported by this browser.');
+}
+});
+</script>
+</body>
+</html>
